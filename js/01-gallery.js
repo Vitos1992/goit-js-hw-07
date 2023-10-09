@@ -6,7 +6,7 @@ console.log(galleryItems);
 const galleryContainer = document.querySelector(".gallery");
 const itemsMarkup = createGalleryItemsMarkup(galleryItems);
 galleryContainer.insertAdjacentHTML("beforeend", itemsMarkup);
-galleryContainer.addEventListener("click", onImgClick);
+galleryContainer.addEventListener("click", galleryItems);
 
 // rendered items
 function createGalleryItemsMarkup(items) {
